@@ -2,7 +2,7 @@
 
     A online Store.
 
-HTML / CSS / JavaScript / React / Components Styles / Routes 
+HTML / CSS / TypeScript / React / Components Styles / Routes 
 
 Skills:
 React componentes, page Routes, form control and validation with libraries and state manipulation.
