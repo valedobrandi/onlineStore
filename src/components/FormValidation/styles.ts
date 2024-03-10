@@ -41,7 +41,7 @@ margin-top: 4rem;
 font-size: 1rem;
 padding: 2rem;
 
-  p {
+  :is(p) {
     font-size: 1.5rem;
   }
 `;
@@ -51,7 +51,7 @@ display: flex;
 gap: 1rem;
 border-bottom: 1px solid black;
 margin: 2rem;
-  p {
+  :is(p) {
     font-size: 1.5rem;
   }
 `;

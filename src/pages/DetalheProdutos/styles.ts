@@ -23,7 +23,7 @@ box-shadow: 3px 3px 6px 0 #0000000d;
     width: 250px;
   }
 
-  p {
+  :is(p) {
     text-align: center;
     font-weight: 800;
     line-height: 1.5rem;

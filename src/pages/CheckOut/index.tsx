@@ -22,7 +22,7 @@ export default function CheckOut(props: {
         {products.map(({ title, id, quantity, price }: CartProductListType) => (
           <ItensContainer key={ id }>
             <h3>{title}</h3>
-            <p>{`Quantity: ${quantity}`}</p>
+            <p>{`Available: ${quantity}`}</p>
             <p>{`Price: ${quantity * price}`}</p>
           </ItensContainer>
         ))}

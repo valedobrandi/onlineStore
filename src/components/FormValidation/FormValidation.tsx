@@ -87,7 +87,7 @@ export default function FormValidation({ paramId, currentProduct }: FormValidati
           cols={ 60 }
           rows={ 10 }
         />
-        { checkForm && <p data-testid="error-msg">Campos inválidos</p>}
+        { checkForm && <p data-testid="error-msg">Invalid fields</p>}
         <button data-testid="submit-review-btn">Send</button>
       </Formulario>
       <CommentsList>

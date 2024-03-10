@@ -15,12 +15,10 @@ export default function Home(props: {
 }) {
   const { productList, setProductList, addProductCarrinho, addProduct } = props;
 
-  const [sortList, setSortList] = useState('');
-
   const [productcategory, setProductcategory] = useState<ProductcategoryType[]>();
   const [productSearch, setProductSearch] = useState<string>('');
   const [search, setSearch] = useState(
-    'Digite algum termo de pesquisa ou escolha uma categoria.',
+    'Search product or choose a category.',
   );
 
   useEffect(() => {
@@ -35,7 +33,7 @@ export default function Home(props: {
     setProductSearch('');
     const response = await getProductsFromCategoryAndQuery(categoryId, query);
     const listCheck = productList.length === 0;
-    if (listCheck) setSearch('Produto não encontrado');
+    if (listCheck) setSearch('Product not found');
     const productDetailsList = response.results.map(
       ({ title,
         id,
@@ -97,7 +95,7 @@ export default function Home(props: {
             >
               {name}
             </button>))
-          : 'Categorias'}
+          : 'Categories'}
       </Category>
       <SearchList>
         <InputContainer>
@@ -114,8 +112,8 @@ export default function Home(props: {
             <FaSearch />
           </button>
           <select name="" id="" onChange={ onSortList }>
-            <option value="Higher">Higher price</option>
-            <option value="Lower">Lower price</option>
+            <option value="Higher">higher price</option>
+            <option value="Lower">lower price</option>
           </select>
         </InputContainer>
         {listCheck ? (
@@ -128,17 +126,17 @@ export default function Home(props: {
                 >
                   <Frete data-testid="free-shipping">
                     {detail.shipping && (
-                      <span>Frete Grátis</span>
+                      <span>free shipping</span>
                     ) }
                   </Frete>
                   <img src={ detail.thumbnail } alt="" />
                   <Title>{`${detail.title.slice(0, 30)}...`}</Title>
                   <p>
-                    R$
+                    US$
                     <Price>{detail.price}</Price>
                   </p>
                   <p>
-                    {`Disponível: 
+                    {`Available: 
                     ${detail.available_quantity - isAvailable(detail.id)}`}
                   </p>
                 </Link>

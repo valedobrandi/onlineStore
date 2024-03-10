@@ -65,7 +65,7 @@ padding: 2rem;
 margin: 2rem;
 width: 500px;
 
-a {
+  :is(a) {
   background-color: #31c28d;
     border: none;
     box-shadow: 3px 3px 6px 0 #0000000d;

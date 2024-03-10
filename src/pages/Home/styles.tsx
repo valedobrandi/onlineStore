@@ -103,7 +103,7 @@ export const ContainerList = styled.div`
     height: 14rem;
   }
 
-  a {
+  :is(a) {
     color: black;
     margin-bottom: 5px;
     text-align: center;
@@ -121,7 +121,7 @@ export const ContainerList = styled.div`
   padding: 1rem;
   width: 300px;
 
-  p {
+  :is(p) {
     margin-top: 0.5rem;
     
   }

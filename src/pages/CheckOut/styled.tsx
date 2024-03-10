@@ -11,7 +11,7 @@ export const ListContainer = styled.div`
     flex-direction: column;
     gap: 1rem;
 
-    p {
+    :is(p) {
         font-size: 1.2rem;
         font-weight: 500;
         margin: 1rem;

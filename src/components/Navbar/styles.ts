@@ -1,19 +1,16 @@
-* {
-  font-family: Epilogue , sans-serif;
-  margin: 0;
-  padding: 0;
-}
+import styled from 'styled-components';
+import { GiShoppingBag } from 'react-icons/gi';
 
-.div {
+export const Conteiner = styled.div`
   align-items: center;
   background-color: #003be5;
   display: flex;
   gap: 15rem;
   height: 150px;
   justify-content: space-around;
-}
+`;
 
-.container {
+export const Home = styled.div`
   font-size: 1.5rem;
   font-weight: 800;
   width: 100px;
@@ -27,9 +24,9 @@
     color: #1a9769;
     transition: 500ms;
   }
-}
+`;
 
-.cart {
+export const Cart = styled.div`
   display: flex;
   font-size: 1.2rem;
   font-weight: 500;
@@ -44,9 +41,19 @@
     text-align: center;
     width: 35px;
   }
-}
 
-.title {
+  a {
+    color: white;
+    font-size: 3.5rem;
+  }
+
+  a:hover {
+    color: #1a9769;
+    transition: 500ms;
+  }
+`;
+
+export const Title = styled.div`
   align-items: center;
   color: white;
   display: flex;
@@ -60,24 +67,12 @@
     font-weight: 400;
     text-transform: none;
   }
-}
+`;
 
-.icon {
-  color: white;
-  font-size: 3.5rem;
-}
-
-.icon:hover {
-  color: #1a9769;
-  transition: 500ms;
-}
-
-.titleIcon {
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #31c28d;
   font-size: 6rem;
-}
-
-.titleContainer {
-  align-items: center;
-  display: flex;
-}
+`;

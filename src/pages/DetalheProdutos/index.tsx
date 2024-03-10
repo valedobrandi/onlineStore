@@ -33,7 +33,7 @@ export default function DetalheProdutos(props: {
               {currentProduct.specification.map(({ name, value_name }) => (
                 <li key={ name }>{`${name}: ${value_name}`}</li>))}
             </ul>
-            {currentProduct.shipping && <span>Frete Grátis</span> }
+            {currentProduct.shipping && <span>free shipping</span> }
             <p>
               R$
               <Price data-testid="product-detail-price">
