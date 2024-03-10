@@ -1,0 +1,83 @@
+* {
+  font-family: Epilogue , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.div {
+  align-items: center;
+  background-color: #003be5;
+  display: flex;
+  gap: 15rem;
+  height: 150px;
+  justify-content: space-around;
+}
+
+.container {
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 100px;
+
+  a {
+    color: #31c28d;
+    font-size: 4rem;
+  }
+
+  a:hover {
+    color: #1a9769;
+    transition: 500ms;
+  }
+}
+
+.cart {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100px;
+
+  p {
+    background-color: #31c28d;
+    border-radius: 50%;
+    color: white;
+    height: 35px;
+    line-height: 40px;
+    text-align: center;
+    width: 35px;
+  }
+}
+
+.title {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  h2 {
+    color: #31c28d;
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+
+.icon {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.icon:hover {
+  color: #1a9769;
+  transition: 500ms;
+}
+
+.titleIcon {
+  color: #31c28d;
+  font-size: 6rem;
+}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+}
